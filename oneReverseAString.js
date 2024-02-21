@@ -1,4 +1,4 @@
-// 15/1/22
+// 17/2/22
 
 // 1. Reverse a String
 
@@ -13,11 +13,15 @@ function reverseString(str) {
 
 console.log(reverseString("hello"));
 
-// let reverseStr = "";
-// for (let i = str.length - 1; i >= 0; i--) {
-//   console.log(str[i]);
+// Method 2
 
-//   reverseStr = reverseStr + str[i];
-// }
+function reverseStringTwo(str) {
+  let reverseStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    console.log(str[i]);
 
-// return reverseStr;
+    reverseStr = reverseStr + str[i];
+  }
+
+  return reverseStr;
+}
